@@ -10,10 +10,11 @@ services:
         command: "/usr/local/bin/create_poster \
             --type ${TYPE:-'grid'} \
             --title ${TITLE:-'Running'} \
-            --year ${YEAR:-'2024'} \
+            --year ${YEAR:-'2026'} \
             --athlete ${ATHLETE:-'John Doe'} \
             --units ${UNITS:-'metric'} \
             --gpx-dir /usr/src/app/gpx \
+            --workers 1 \
             ${EXTRA_OPTIONS:-'--verbose'} \
             --output /usr/src/app/output/output.svg"
         volumes:
