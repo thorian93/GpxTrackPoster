@@ -19,6 +19,8 @@ Create a visually appealing poster from your GPX tracks - heavily inspired by ht
 ### Container
 There is a Dockerfile in this repository, which you can use to run this software.
 
+_When running on Podman, you might need to specify `--workers 1` to work around the issue `Something went wrong when loading GPX.`._
+
 1. Build the container: `podman build -f Dockerfile -t gpxtrackposter:latest`.
 2. Run the container to build your poster:
     ```
